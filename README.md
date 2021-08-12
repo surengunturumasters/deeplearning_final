@@ -1,7 +1,7 @@
 # Segmentation of OCT Images with DME using UNet
 
 ## Introduction
-![alt text](https://github.com/surengunturumasters/deeplearning_final/blob/main/unet_arch.png)
+![alt text](https://github.com/surengunturumasters/deeplearning_final/blob/main/eye.png)
 
 Problem: A deep learning approach to diagnose diabetic macular edema using Optical Coherence Tomography
 
