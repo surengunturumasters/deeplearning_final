@@ -1,8 +1,8 @@
 # Segmentation of OCT Images with DME using UNet
 
-## Introduction
 ![alt text](https://github.com/surengunturumasters/deeplearning_final/blob/main/eye.png)
 
+## Introduction
 Problem: A deep learning approach to diagnose diabetic macular edema using Optical Coherence Tomography
 
 DME (Diabetic Macular Edema) is caused by type-II diabetes and it usually affects the eye. This can ultimately result in blindness. In fact, 750,000 Americans are diagnosed with this particular disease so it is of utmost importance to be able to identify DME before it becomes serious. 
