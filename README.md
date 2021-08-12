@@ -29,7 +29,7 @@ Trained the UNet model with three encoding blocks on 1000 epochs and got the ima
 
 The resulting images from the model trained on 1000 epochs is shown below: 
 
-![alt text]()
+![alt text](https://github.com/surengunturumasters/deeplearning_final/blob/main/results.png)
 
 ## Next Steps
 Other ways to analyze our UNet model is to play around with the patch size or the number of pixels in a neighborhood to predict the class of a certain pixel in an image. We could also play around with using more layers, but the biggest impediment was the lack of data. With more data, the UNet model should be able to learn the associations between the input image and the target segmented image. 
