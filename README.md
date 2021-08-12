@@ -22,6 +22,7 @@ From our results, the UNet with three encoding blocks and three decoding blocks 
 
 ## Result
 Go to the bottom of the below link to get the images predicted from the final UNet model
+
 [Link of the final UNET notebook images](https://github.com/surengunturumasters/deeplearning_final/blob/main/unet.ipynb)
 
 Trained the UNet model with three encoding blocks on 1000 epochs and got the images as shown in the bottom of the link of the notebook above. From the results, validation loss tends to oscillate a lot, with the best loss coming around epoch 800. However, more data would be needed in order to create a more accurate model, and this was the main difficulty throughout the project. As of now, we saw that the model overfitted on the training set on some epochs and on others, it was alright, which was a bit mysterious. 
