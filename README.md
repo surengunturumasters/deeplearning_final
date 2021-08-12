@@ -11,7 +11,9 @@ One particular test for DME is Optical Coherence Tomography (OCT), which uses a 
 The main dataset used in this project was the segmentation of OCT images from the Optical Coherence Tomography and Diabetic Macular Edema dataset on kaggle by Paul Mooney. The link to the dataset is shown [here](https://www.kaggle.com/paultimothymooney/chiu-2015). The training set includes information from six patients while the validation set includes information from one patient. The target classes for classification was found from segmented fluid-filled regions and segmented retinal layer boundaries. More information about the dataset can be found using the link. 
 
 ## Methods
-The deep learning approach that we tried to implement for this particular use case is a Unet. Usually, traditional CNN's would be used for image classification, but this is an image segmentation task where a label needs to be shown for every pixel. Because of this, UNets had to be used so that it would create a label around a neighborhood of pixels for a certain pixel, and then upsample those results so that the label would be shown in that particular pixel. Because of this, the output of the UNet had to be the size of the target image. 
+The deep learning approach that we tried to implement for this particular use case is a Unet. Usually, traditional CNN's would be used for image classification, but this is an image segmentation task where a label needs to be shown for every pixel. Because of this, UNets had to be used so that it would create a label around a neighborhood of pixels for a certain pixel, and then upsample those results so that the label would be shown in that particular pixel. Because of this, the output of the UNet had to be the size of the target image. The UNet architecture is shown below: 
+
+![alt text](https://github.com/surengunturumasters/deeplearning_final/blob/main/results.png)
 
 Our results contain three models: 
 1) UNet with four encoding blocks and four decoding blocks as shown [here](https://github.com/surengunturumasters/deeplearning_final/blob/main/unet-model1.ipynb)
@@ -30,6 +32,8 @@ Trained the UNet model with three encoding blocks on 1000 epochs and got the ima
 The resulting images from the model trained on 1000 epochs is shown below: 
 
 ![alt text](https://github.com/surengunturumasters/deeplearning_final/blob/main/results.png)
+
+The comparisons are mainly done between the segmented localization images and the target images and as we can see, some parts of the shapes are being identified but still, not enough to provide accurate results. More data or a more accurate model would need to be produced to work on this further. 
 
 ## Next Steps
 Other ways to analyze our UNet model is to play around with the patch size or the number of pixels in a neighborhood to predict the class of a certain pixel in an image. We could also play around with using more layers, but the biggest impediment was the lack of data. With more data, the UNet model should be able to learn the associations between the input image and the target segmented image. 
