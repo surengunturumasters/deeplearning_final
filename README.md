@@ -22,7 +22,7 @@ However with this architecture, we varied the amount of encoding and decoding bl
 Our results contain three models: 
 1) UNet with four encoding blocks and four decoding blocks as shown [here](https://github.com/surengunturumasters/deeplearning_final/blob/main/unet-model1.ipynb)
 2) UNet with three encoding blocks and three decoding blocks as shown [here](https://github.com/surengunturumasters/deeplearning_final/blob/main/unet.ipynb)
-3) UNet with two encoding blocks and two decoding blocks --> show link to notebook
+3) UNet with two encoding blocks and two decoding blocks as shown [here](https://github.com/surengunturumasters/deeplearning_final/blob/main/Unet_model2.ipynb)
 
 From our results, the UNet with three encoding blocks and three decoding blocks had the best IOU under 100 epochs with a value of 0.22. Although the UNet with four encoding blocks was very close in IOU, it took about an hour to train 100 epochs under a gpu because the final layer of the model contains a convolutional layer with a kernel size of 81 to make sure the dimensions match the output. However, the UNet with three blocks was perfectly able to match the dimensions of the output without exploding the kernel size, and so training time for 100 epochs took only 10 minutes. Therefore, we used model (2) from above as the model for final segmentation. 
 
