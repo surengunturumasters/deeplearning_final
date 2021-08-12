@@ -27,6 +27,10 @@ Go to the bottom of the below link to get the images predicted from the final UN
 
 Trained the UNet model with three encoding blocks on 1000 epochs and got the images as shown in the bottom of the link of the notebook above. From the results, validation loss tends to oscillate a lot, with the best loss coming around epoch 800. However, more data would be needed in order to create a more accurate model, and this was the main difficulty throughout the project. As of now, we saw that the model overfitted on the training set on some epochs and on others, it was alright, which was a bit mysterious. 
 
+The resulting images from the model trained on 1000 epochs is shown below: 
+
+![alt text]()
+
 ## Next Steps
 Other ways to analyze our UNet model is to play around with the patch size or the number of pixels in a neighborhood to predict the class of a certain pixel in an image. We could also play around with using more layers, but the biggest impediment was the lack of data. With more data, the UNet model should be able to learn the associations between the input image and the target segmented image. 
 
