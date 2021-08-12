@@ -14,7 +14,7 @@ The main dataset used in this project was the segmentation of OCT images from th
 The deep learning approach that we tried to implement for this particular use case is a Unet. Usually, traditional CNN's would be used for image classification, but this is an image segmentation task where a label needs to be shown for every pixel. Because of this, UNets had to be used so that it would create a label around a neighborhood of pixels for a certain pixel, and then upsample those results so that the label would be shown in that particular pixel. Because of this, the output of the UNet had to be the size of the target image. 
 
 Our results contain three models: 
-1) UNet with four encoding blocks and four decoding blocks as shown [here]()
+1) UNet with four encoding blocks and four decoding blocks as shown [here](https://github.com/surengunturumasters/deeplearning_final/blob/main/unet-model1.ipynb)
 2) UNet with three encoding blocks and three decoding blocks as shown [here](https://github.com/surengunturumasters/deeplearning_final/blob/main/unet.ipynb)
 3) UNet with two encoding blocks and two decoding blocks --> show link to notebook
 
